@@ -1,0 +1,41 @@
+1. RFOil
+
+- Kombinasi feature hasil terbaik : input + [InjectionPeriod, SoakingPeriod, ProductionPeriod]
+
+- Tidak perlu handling outliers 
+
+- Hasil model terbaik (detail bisa lihat di file ipynb sementara : https://colab.research.google.com/drive/16Kbn0Bbbc49Vm-qIo0t1jqG_XlQaF-PZ?usp=sharing)
+
+Model neural network (non modified architecture)
+Training Set Metrics:
+Train Loss: 0.4116
+Train R² Score: 0.9846
+Train MAE: 0.5585
+Train RMSE: 1.0054
+
+Test Set Metrics:
+Test Loss: 0.6856
+Test R² Score: 0.9621
+Test MAE: 0.8761
+Test RMSE: 1.4379
+
+2. OilSteamRatio
+
+- Kombinasi feature hasil terbaik : input + [InjectionPeriod, SoakingPeriod, ProductionPeriod]
+
+- Perlu handling outliers (buang ~14% data awal)
+
+- Hasil model terbaik (detail bisa lihat di file ipynb sementara : https://colab.research.google.com/drive/1U0EJRvXCvYMkN0hnyBPVPNvQIw069cs0?usp=sharing)
+
+Model neural network (non modified architecture)
+Training Set Metrics:
+Train Loss: 0.1272
+Train R² Score: 0.9326
+Train MAE: 0.2281
+Train RMSE: 0.4743
+
+Test Set Metrics:
+Test Loss: 0.2174
+Test R² Score: 0.8576
+Test MAE: 0.3559
+Test RMSE: 0.6957
